@@ -1,19 +1,18 @@
 package boardgame;
 
-public class Board {
+public class Position {
 	
 	private int row;
 	private int column;
-	private Piece[][] pieces;
 	
-	public Board() {
+	public Position() {
 		
 	}
 
-	public Board(int row, int column) {
+	public Position(int row, int column) {
+		super();
 		this.row = row;
 		this.column = column;
-		pieces = new Piece[row][column];
 	}
 
 	public int getRow() {
@@ -31,5 +30,7 @@ public class Board {
 	public void setColumn(int column) {
 		this.column = column;
 	}
+	
+	
 
 }
